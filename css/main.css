@@ -1,0 +1,151 @@
+/* CORES */
+/* ESCALAS DE PRETO */
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Archivo", sans-serif;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+button {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 121.6rem;
+  margin: 0 auto;
+  padding: 0rem 1.5rem;
+}
+
+.upper {
+  background-color: #0D0B1A;
+  width: 100%;
+  max-width: 192rem;
+  height: 3.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+.upper .texto {
+  margin: 0 auto;
+}
+.upper .texto span {
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 150%;
+  color: #F2F5FC;
+}
+.upper .texto span a {
+  border-bottom: 1px solid #F2F5FC;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 150%;
+  color: #F2F5FC;
+}
+.upper .close {
+  margin-right: 35rem;
+  margin-left: -25rem;
+}
+.upper .close a {
+  color: #4C4A5E;
+  font-size: 1.4rem;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+.upper .close a:hover {
+  color: #FFFFFF;
+}
+
+.down {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.down .logo a img {
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+.down .logo a img:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.down .right-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+.down .right-area .acessar {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.down .right-area .acessar button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.down .right-area .acessar button span {
+  margin-left: 1.2rem;
+  font-weight: bold;
+  font-size: 1.4rem;
+  line-height: 150%;
+  color: #1E1C2D;
+  margin-right: 4.4rem;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.down .right-area .acessar button span:hover {
+  border-bottom: 0.8px solid #140C40;
+}
+.down .right-area .cadastrar button {
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 150%;
+  color: #1D63FF;
+  border: 1px solid #1D63FF;
+  padding: 1rem 1.6rem;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.down .right-area .cadastrar button:hover {
+  background-color: #1D63FF;
+  color: #FFFFFF;
+}
