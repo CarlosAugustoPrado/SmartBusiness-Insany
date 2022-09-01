@@ -69,11 +69,11 @@
           font-weight: bold;
           font-size: 1.4rem;
           line-height: 150%;       
-          color: #1E1C2D;
+          color: #140C40;
           margin-right: 4.4rem; 
           transition: all .3s;
           &:hover {            
-            border-bottom: 0.8px solid #140C40;
+            text-decoration: underline #140C40;
           }
         }
       }

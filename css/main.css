@@ -127,13 +127,14 @@ ul {
   font-weight: bold;
   font-size: 1.4rem;
   line-height: 150%;
-  color: #1E1C2D;
+  color: #140C40;
   margin-right: 4.4rem;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 .down .right-area .acessar button span:hover {
-  border-bottom: 0.8px solid #140C40;
+  -webkit-text-decoration: underline #140C40;
+  text-decoration: underline #140C40;
 }
 .down .right-area .cadastrar button {
   font-weight: 600;
@@ -148,4 +149,171 @@ ul {
 .down .right-area .cadastrar button:hover {
   background-color: #1D63FF;
   color: #FFFFFF;
+}
+
+.s-hero .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+.s-hero .container .text-area {
+  margin-top: 9.4rem;
+  position: relative;
+  z-index: 2022;
+}
+.s-hero .container .text-area .up {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.s-hero .container .text-area .up .icon {
+  background-color: #1D63FF;
+  border-radius: 50%;
+  height: 3.2rem;
+  width: 3.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 1.2rem;
+}
+.s-hero .container .text-area .up span {
+  color: #1E1C2D;
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 150%;
+}
+.s-hero .container .text-area .titulo {
+  margin-top: 1.6rem;
+}
+.s-hero .container .text-area .titulo h1 {
+  color: #0D0B1A;
+  font-weight: 400;
+  font-size: 5.8rem;
+  line-height: 125%;
+  width: 100%;
+  max-width: 71.2rem;
+  margin-bottom: 3rem;
+}
+.s-hero .container .text-area .titulo h1 strong {
+  -webkit-text-decoration: underline #1D63FF;
+  text-decoration: underline #1D63FF;
+}
+.s-hero .container .text-area .titulo h3 {
+  color: #2A2739;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 150%;
+  width: 100%;
+  max-width: 54.5rem;
+  margin-bottom: 4rem;
+}
+.s-hero .container .text-area .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.s-hero .container .text-area .buttons .cadastrar-negocio {
+  background-color: #1D63FF;
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 150%;
+  padding: 16px 32px;
+  margin-right: 4.9rem;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.s-hero .container .text-area .buttons .cadastrar-negocio:hover {
+  border: 1px solid #1D63FF;
+  background-color: #FFFFFF;
+  color: #1D63FF;
+}
+.s-hero .container .text-area .buttons .fale-conosco {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.s-hero .container .text-area .buttons .fale-conosco img {
+  margin-right: 1.2rem;
+}
+.s-hero .container .text-area .buttons .fale-conosco a {
+  color: #1E1C2D;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 150%;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.s-hero .container .text-area .buttons .fale-conosco a:hover {
+  color: #140C40;
+  -webkit-text-decoration: underline #140C40;
+  text-decoration: underline #140C40;
+}
+.s-hero .container .image-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.s-hero .container .image-area .primary-image {
+  position: relative;
+  top: 0;
+  right: 5rem;
+}
+.s-hero .container .image-area .primary-image img {
+  z-index: 0;
+}
+.s-hero .container .image-area .chat {
+  position: absolute;
+  top: 20.9rem;
+  right: 32.4rem;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.9);
+  height: 49px;
+  width: 49px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.s-hero .container .image-area .chart {
+  position: absolute;
+  width: 22.1rem;
+  height: 19.9rem;
+  background-color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  top: 33.1rem;
+  right: 3.8rem;
+  -webkit-box-shadow: 0px 30px 40px -20px rgba(74, 77, 96, 0.2);
+  box-shadow: 0px 30px 40px -20px rgba(74, 77, 96, 0.2);
+  -webkit-backdrop-filter: blur(24px);
+  backdrop-filter: blur(24px);
 }
