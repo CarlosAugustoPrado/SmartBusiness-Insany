@@ -534,6 +534,7 @@
 }
 .s-blog {
   background-color: #F2F5FC;
+  
   .container {
     .superior {
       padding-top: 12rem;
@@ -547,8 +548,10 @@
           font-size: 1.6rem;
           line-height: 150%;
           color: $primary-default;
+          
         }
         h2 {
+          margin-top: 2rem;
           width: 41.1rem;
           font-weight: 400;
           font-size: 4.8rem;
@@ -570,18 +573,18 @@
         }
       }
     }
-    .slide-principal {
-      
-      .swipper-wrapper {
+    .slide-blog {  
+      overflow: hidden;    
+      .swiper-wrapper {
         display: flex;
-        .swipper-slide {
+        .swiper-slide {
           max-width: 28rem;
           .imagem {
-            width: 28rem;
+            width: 26rem;
             height: 34rem;
           }
           &:not(:first-child) {
-            margin-left: 3.2rem;
+            margin-left: 2.4rem;
           }
           .textos {
             .texto-superior {
@@ -607,13 +610,50 @@
               margin-bottom: 2.4rem;
               p {
                 font-weight: 400;
-                font-size: 2rem;
+                font-size: 1.8rem;
                 line-height: 150%;
                 color: $neutral-dark-700;
               }
             }
+            .texto-inferior {
+              display: flex;
+              padding-bottom: 7.8rem;
+              .avatar {
+                margin-right: 1.6rem;
+              }
+              .autor {
+                strong {
+                  font-weight: 600;
+                  font-size: 1.6rem;
+                  line-height: 150%;
+                  color: $neutral-dark-700;
+                }
+                span {
+                  font-weight: 400;
+                  font-size: 1.4rem;
+                  line-height: 150%;
+                  color: $neutral-dark-400;
+                }
+              }
+            }
+          }
+        }        
+      }
+      .swiper-pagination {
+        position: relative;
+        padding-bottom: 12rem;
+        .swiper-pagination-bullet {
+          width: 10px;
+          height: 10px;
+          background-color: $primary-default;
+          opacity: 1;
+          
+          &-active {
+            background-color: #FFFFFF;
+            border: 1px solid #1D63FF;
           }
         }
+        
       } 
     }
   }

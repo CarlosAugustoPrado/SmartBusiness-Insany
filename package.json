@@ -1,9 +1,9 @@
 {
-  "name": "codeboost-gulp",
+  "name": "gulp",
   "version": "1.0.0",
-  "description": "Um projeto criado par ao codeboost",
+  "description": "Template Gulp",
   "main": "index.js",
-  "author": "William Moreira",
+  "author": "Carlos Augusto Prado",
   "license": "MIT",
   "dependencies": {
     "@babel/core": "^7.16.0",

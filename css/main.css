@@ -768,6 +768,7 @@ ul {
   color: #1D63FF;
 }
 .s-blog .container .superior .titulo h2 {
+  margin-top: 2rem;
   width: 41.1rem;
   font-weight: 400;
   font-size: 4.8rem;
@@ -791,22 +792,25 @@ ul {
   color: #0D0B1A;
   margin-right: 1rem;
 }
-.s-blog .container .slide-principal .swipper-wrapper {
+.s-blog .container .slide-blog {
+  overflow: hidden;
+}
+.s-blog .container .slide-blog .swiper-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-.s-blog .container .slide-principal .swipper-wrapper .swipper-slide {
+.s-blog .container .slide-blog .swiper-wrapper .swiper-slide {
   max-width: 28rem;
 }
-.s-blog .container .slide-principal .swipper-wrapper .swipper-slide .imagem {
-  width: 28rem;
+.s-blog .container .slide-blog .swiper-wrapper .swiper-slide .imagem {
+  width: 26rem;
   height: 34rem;
 }
-.s-blog .container .slide-principal .swipper-wrapper .swipper-slide:not(:first-child) {
-  margin-left: 3.2rem;
+.s-blog .container .slide-blog .swiper-wrapper .swiper-slide:not(:first-child) {
+  margin-left: 2.4rem;
 }
-.s-blog .container .slide-principal .swipper-wrapper .swipper-slide .textos .texto-superior {
+.s-blog .container .slide-blog .swiper-wrapper .swiper-slide .textos .texto-superior {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -816,25 +820,60 @@ ul {
   align-items: center;
   margin-bottom: 1.2rem;
 }
-.s-blog .container .slide-principal .swipper-wrapper .swipper-slide .textos .texto-superior span {
+.s-blog .container .slide-blog .swiper-wrapper .swiper-slide .textos .texto-superior span {
   font-weight: 600;
   font-size: 1.6rem;
   line-height: 150%;
   color: #1D63FF;
   margin-right: 1.6rem;
 }
-.s-blog .container .slide-principal .swipper-wrapper .swipper-slide .textos .texto-superior p {
+.s-blog .container .slide-blog .swiper-wrapper .swiper-slide .textos .texto-superior p {
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 150%;
   color: #353345;
 }
-.s-blog .container .slide-principal .swipper-wrapper .swipper-slide .textos .texto-central {
+.s-blog .container .slide-blog .swiper-wrapper .swiper-slide .textos .texto-central {
   margin-bottom: 2.4rem;
 }
-.s-blog .container .slide-principal .swipper-wrapper .swipper-slide .textos .texto-central p {
+.s-blog .container .slide-blog .swiper-wrapper .swiper-slide .textos .texto-central p {
   font-weight: 400;
-  font-size: 2rem;
+  font-size: 1.8rem;
   line-height: 150%;
   color: #0D0B1A;
+}
+.s-blog .container .slide-blog .swiper-wrapper .swiper-slide .textos .texto-inferior {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 7.8rem;
+}
+.s-blog .container .slide-blog .swiper-wrapper .swiper-slide .textos .texto-inferior .avatar {
+  margin-right: 1.6rem;
+}
+.s-blog .container .slide-blog .swiper-wrapper .swiper-slide .textos .texto-inferior .autor strong {
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 150%;
+  color: #0D0B1A;
+}
+.s-blog .container .slide-blog .swiper-wrapper .swiper-slide .textos .texto-inferior .autor span {
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 150%;
+  color: #2A2739;
+}
+.s-blog .container .slide-blog .swiper-pagination {
+  position: relative;
+  padding-bottom: 12rem;
+}
+.s-blog .container .slide-blog .swiper-pagination .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background-color: #1D63FF;
+  opacity: 1;
+}
+.s-blog .container .slide-blog .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #FFFFFF;
+  border: 1px solid #1D63FF;
 }
