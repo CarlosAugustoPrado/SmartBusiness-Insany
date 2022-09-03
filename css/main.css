@@ -37,7 +37,7 @@ ul {
   padding: 0rem 1.5rem;
 }
 
-.upper {
+header .upper {
   background-color: #0D0B1A;
   width: 100%;
   max-width: 192rem;
@@ -51,37 +51,36 @@ ul {
   text-align: center;
   margin-bottom: 4rem;
 }
-.upper .texto {
+header .upper .texto {
   margin: 0 auto;
 }
-.upper .texto span {
+header .upper .texto span {
   font-weight: 400;
   font-size: 1.4rem;
   line-height: 150%;
   color: #F2F5FC;
 }
-.upper .texto span a {
+header .upper .texto span a {
   border-bottom: 1px solid #F2F5FC;
   font-weight: 400;
   font-size: 1.4rem;
   line-height: 150%;
   color: #F2F5FC;
 }
-.upper .close {
+header .upper .close {
   margin-right: 35rem;
   margin-left: -25rem;
 }
-.upper .close a {
+header .upper .close a {
   color: #4C4A5E;
   font-size: 1.4rem;
   -webkit-transition: color 0.3s;
   transition: color 0.3s;
 }
-.upper .close a:hover {
+header .upper .close a:hover {
   color: #FFFFFF;
 }
-
-.down {
+header .down {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -89,17 +88,17 @@ ul {
   -ms-flex-pack: justify;
   justify-content: space-between;
 }
-.down .logo a img {
+header .down .logo a img {
   -webkit-transition: -webkit-transform 0.3s;
   transition: -webkit-transform 0.3s;
   transition: transform 0.3s;
   transition: transform 0.3s, -webkit-transform 0.3s;
 }
-.down .logo a img:hover {
+header .down .logo a img:hover {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
-.down .right-area {
+header .down .right-area {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -109,12 +108,12 @@ ul {
   -ms-flex-pack: distribute;
   justify-content: space-around;
 }
-.down .right-area .acessar {
+header .down .right-area .acessar {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
 }
-.down .right-area .acessar button {
+header .down .right-area .acessar button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -122,7 +121,7 @@ ul {
   -ms-flex-align: center;
   align-items: center;
 }
-.down .right-area .acessar button span {
+header .down .right-area .acessar button span {
   margin-left: 1.2rem;
   font-weight: bold;
   font-size: 1.4rem;
@@ -132,11 +131,11 @@ ul {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-.down .right-area .acessar button span:hover {
+header .down .right-area .acessar button span:hover {
   -webkit-text-decoration: underline #140C40;
   text-decoration: underline #140C40;
 }
-.down .right-area .cadastrar button {
+header .down .right-area .cadastrar button {
   font-weight: 600;
   font-size: 1.4rem;
   line-height: 150%;
@@ -146,7 +145,7 @@ ul {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-.down .right-area .cadastrar button:hover {
+header .down .right-area .cadastrar button:hover {
   background-color: #1D63FF;
   color: #FFFFFF;
 }
@@ -226,6 +225,7 @@ ul {
   align-items: center;
 }
 .s-hero .container .text-area .buttons .cadastrar-negocio {
+  border: 1px solid #1D63FF;
   background-color: #1D63FF;
   color: #FFFFFF;
   font-weight: 600;
@@ -616,13 +616,13 @@ ul {
   display: flex;
 }
 .s-como-funciona .container .left-area .imagens .vendas {
-  margin-top: 34.8rem;
+  margin-top: 33.8rem;
   -webkit-box-align: end;
   -ms-flex-align: end;
   align-items: flex-end;
   width: 100%;
   max-width: 17.6rem;
-  height: 19.5rem;
+  height: 13.5rem;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -632,8 +632,8 @@ ul {
   text-align: center;
   margin-right: 3.2rem;
   background-color: rgba(255, 255, 255, 0.9);
-  -webkit-box-shadow: 0px 20px 30px -20px rgba(94, 97, 118, 0.15);
-  box-shadow: 0px 20px 30px -20px rgba(94, 97, 118, 0.15);
+  -webkit-box-shadow: 0px 20px 30px -20px rgba(94, 97, 118, 0.3);
+  box-shadow: 0px 20px 30px -20px rgba(94, 97, 118, 0.3);
 }
 .s-como-funciona .container .left-area .imagens .vendas .cursor {
   width: 71px;
@@ -642,6 +642,7 @@ ul {
   border-radius: 50%;
   position: relative;
   left: 5.3rem;
+  margin-bottom: 1rem;
 }
 .s-como-funciona .container .left-area .imagens .vendas .imagem-cursor {
   position: absolute;
@@ -747,6 +748,7 @@ ul {
 
 .s-blog {
   background-color: #F2F5FC;
+  margin-bottom: 12rem;
 }
 .s-blog .container .superior {
   padding-top: 12rem;
@@ -876,4 +878,190 @@ ul {
 .s-blog .container .slide-blog .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #FFFFFF;
   border: 1px solid #1D63FF;
+}
+
+.s-faq .container .upper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.s-faq .container .upper .left-area {
+  max-width: 41.1rem;
+  margin-right: 9.9rem;
+}
+.s-faq .container .upper .left-area span {
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 150%;
+  color: #1D63FF;
+}
+.s-faq .container .upper .left-area h2 {
+  font-weight: 400;
+  font-size: 4.8rem;
+  line-height: 125%;
+  color: #0D0B1A;
+  margin-top: 1.6rem;
+  margin-bottom: 1.6rem;
+}
+.s-faq .container .upper .left-area p {
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 150%;
+  color: #1E1C2D;
+}
+.s-faq .container .upper .left-area .cadastrar-negocio {
+  border: 1px solid #1D63FF;
+  margin-top: 4rem;
+  margin-bottom: 2.4rem;
+  background-color: #1D63FF;
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 150%;
+  padding: 16px 32px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.s-faq .container .upper .left-area .cadastrar-negocio:hover {
+  border: 1px solid #1D63FF;
+  background-color: #FFFFFF;
+  color: #1D63FF;
+}
+.s-faq .container .upper .left-area .fale-conosco {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.s-faq .container .upper .left-area .fale-conosco img {
+  margin-right: 1.2rem;
+}
+.s-faq .container .upper .left-area .fale-conosco a {
+  color: #1E1C2D;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 150%;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.s-faq .container .upper .left-area .fale-conosco a:hover {
+  color: #140C40;
+  -webkit-text-decoration: underline #140C40;
+  text-decoration: underline #140C40;
+}
+.s-faq .container .upper .right-area {
+  max-width: 69.6rem;
+}
+.s-faq .container .upper .right-area .accordion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-bottom: 1.5px solid #CBD6E2;
+  padding-bottom: 3.6rem;
+  width: 69.6rem;
+}
+.s-faq .container .upper .right-area .accordion:not(:last-child) {
+  margin-bottom: 3.6rem;
+}
+.s-faq .container .upper .right-area .accordion::after {
+  content: "+";
+  font-size: 2.4rem;
+  color: #4C4A5E;
+  float: right;
+  margin-left: 5px;
+}
+.s-faq .container .upper .right-area .accordion .numero {
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 125%;
+  color: #1D63FF;
+  margin-right: 2.4rem;
+}
+.s-faq .container .upper .right-area .accordion p {
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 150%;
+  color: #413E52;
+}
+.s-faq .container .upper .right-area .accordion .expandir {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+.s-faq .container .upper .right-area .accordion.active {
+  border-bottom: 0px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.s-faq .container .upper .right-area .panel {
+  display: none;
+  margin-left: 5rem;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.2s ease-out;
+  transition: max-height 0.2s ease-out;
+}
+.s-faq .container .upper .right-area .panel p {
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 150%;
+  color: #2A2739;
+}
+.s-faq .container .upper .right-area .panel.active {
+  padding-bottom: 3.6rem;
+  margin-bottom: 3.6rem;
+  margin-top: 1.4rem;
+  max-width: 58rem;
+}
+.s-faq .container .lower {
+  width: 100%;
+  max-width: 121.6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 7.8rem;
+}
+.s-faq .container .lower .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  max-width: 38.4rem;
+  height: 24rem;
+  background-color: #F2F5FC;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+}
+.s-faq .container .lower .card img {
+  width: 3.9rem;
+  height: 3.7rem;
+  margin-bottom: 2.8rem;
+}
+.s-faq .container .lower .card:not(:last-child) {
+  margin-right: 3.2rem;
+}
+.s-faq .container .lower .card span {
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 150%;
+  margin-bottom: 0.4rem;
+}
+.s-faq .container .lower .card p {
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 150%;
+  color: #353345;
 }
