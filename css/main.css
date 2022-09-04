@@ -49,7 +49,10 @@ header .upper {
   -ms-flex-align: center;
   align-items: center;
   text-align: center;
-  margin-bottom: 4rem;
+}
+header .upper.anuncio-closed {
+  display: none;
+  pointer-events: none;
 }
 header .upper .texto {
   margin: 0 auto;
@@ -81,6 +84,7 @@ header .upper .close a:hover {
   color: #FFFFFF;
 }
 header .down {
+  margin-top: 4rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -148,6 +152,56 @@ header .down .right-area .cadastrar button {
 header .down .right-area .cadastrar button:hover {
   background-color: #1D63FF;
   color: #FFFFFF;
+}
+
+footer {
+  height: 14.6rem;
+  padding-top: 5.4rem;
+}
+footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+footer .container .direitos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: 8.1rem;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 150%;
+  color: #353345;
+}
+footer .container .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 14.2rem;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+footer .container .icons .icon:not(:last-child) {
+  margin-right: 1.6rem;
+}
+footer .container .insany {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: 11.2rem;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 150%;
+  color: #2A2739 strong;
+  color-font-weight: 400;
+  color-text-decoration: underline;
 }
 
 .s-hero .container {
@@ -1064,4 +1118,537 @@ header .down .right-area .cadastrar button:hover {
   font-size: 1.4rem;
   line-height: 150%;
   color: #353345;
+}
+
+.s-newsletter {
+  background: url("../img/background.png") no-repeat center center;
+  background-size: cover;
+  margin-top: 12rem;
+  height: 45.6rem;
+}
+.s-newsletter .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.s-newsletter .container .textos {
+  padding-top: 8.9rem;
+  text-align: center;
+}
+.s-newsletter .container .textos span {
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 150%;
+  color: #1D63FF;
+}
+.s-newsletter .container .textos h2 {
+  font-weight: 400;
+  font-size: 4rem;
+  line-height: 125%;
+  color: #FFFFFF;
+  margin-top: 1.5rem;
+  margin-bottom: 0.8rem;
+}
+.s-newsletter .container .textos p {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 150%;
+  color: #FFFFFF;
+}
+.s-newsletter .container .input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 3.5rem;
+  background-color: #F2F5FC;
+  width: 100%;
+  max-width: 48.8rem;
+  height: 7.2rem;
+}
+.s-newsletter .container .input input {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 150%;
+  color: #413E52;
+  margin-right: 10.5rem;
+}
+.s-newsletter .container .input input::-webkit-input-placeholder {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 150%;
+  color: #413E52;
+}
+.s-newsletter .container .input input::-moz-placeholder {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 150%;
+  color: #413E52;
+}
+.s-newsletter .container .input input:-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 150%;
+  color: #413E52;
+}
+.s-newsletter .container .input input::-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 150%;
+  color: #413E52;
+}
+.s-newsletter .container .input input::placeholder {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 150%;
+  color: #413E52;
+}
+.s-newsletter .container .input img {
+  margin-right: 1.4rem;
+  margin-left: 2.05rem;
+}
+.s-newsletter .container .input .cadastrar {
+  border: 1px solid #1D63FF;
+  background-color: #1D63FF;
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 110%;
+  padding: 13px 27px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.s-newsletter .container .input .cadastrar:hover {
+  border: 1px solid #1D63FF;
+  background-color: #FFFFFF;
+  color: #1D63FF;
+}
+
+.modal-login {
+  z-index: 2022;
+  position: absolute;
+  background-color: #FFFFFF;
+  width: 100%;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  opacity: 0;
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  pointer-events: none;
+}
+.modal-login.acesso-opened {
+  opacity: 1;
+  -webkit-transform: translateY(0%);
+  transform: translateY(0%);
+  pointer-events: all;
+}
+.modal-login .container .box {
+  max-height: 100rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.modal-login .container .box .left-area {
+  height: 100rem;
+  width: 100%;
+  max-width: 52.8rem;
+  background-color: #1D63FF;
+  position: relative;
+  margin-right: 24.7rem;
+}
+.modal-login .container .box .left-area .upper {
+  padding-top: 8.8rem;
+  padding-left: 8.8rem;
+}
+.modal-login .container .box .left-area .upper h2 {
+  font-weight: 400;
+  font-size: 3.2rem;
+  line-height: 125%;
+  color: #FFFFFF;
+  margin-top: 6.4rem;
+}
+.modal-login .container .box .left-area .lower {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.modal-login .container .box .left-area .lower .mulher {
+  position: absolute;
+  bottom: 0;
+  left: 96px;
+}
+.modal-login .container .box .left-area .lower .grafico {
+  position: absolute;
+  bottom: 71px;
+  left: 10px;
+}
+.modal-login .container .box .left-area .lower .receita {
+  position: absolute;
+  background-color: #FFFFFF;
+  width: 202px;
+  height: 182px;
+  bottom: 74px;
+  right: 57px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.modal-login .container .box .right-area {
+  width: 100%;
+  max-width: 47.8rem;
+}
+.modal-login .container .box .right-area .upper .voltar {
+  margin-top: 8.8rem;
+  margin-bottom: 8.1rem;
+}
+.modal-login .container .box .right-area .upper .voltar .btn-voltar-modal-login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.modal-login .container .box .right-area .upper .voltar .btn-voltar-modal-login img {
+  margin-right: 1rem;
+}
+.modal-login .container .box .right-area .upper .voltar .btn-voltar-modal-login span {
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 150%;
+  color: #1E1C2D;
+}
+.modal-login .container .box .right-area .upper .login {
+  margin-bottom: 3.8rem;
+}
+.modal-login .container .box .right-area .upper .login h3 {
+  font-weight: 400;
+  font-size: 3.2rem;
+  line-height: 125%;
+  color: #413E52;
+}
+.modal-login .container .box .right-area .inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-bottom: 2.4rem;
+}
+.modal-login .container .box .right-area .inputs span {
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 150%;
+  color: #757385;
+  margin-bottom: 0.3rem;
+}
+.modal-login .container .box .right-area .inputs input {
+  border: 1.5px solid rgba(160, 170, 178, 0.4);
+  max-width: 47.8rem;
+  height: 5.6rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.modal-login .container .box .right-area .inputs input:not(:last-child) {
+  margin-bottom: 3.2rem;
+}
+.modal-login .container .box .right-area .inputs input:focus {
+  border: 2px solid rgba(29, 99, 255, 0.5);
+}
+.modal-login .container .box .right-area .forgot {
+  margin-bottom: 3.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.modal-login .container .box .right-area .forgot .caixa {
+  margin-right: 0.8rem;
+}
+.modal-login .container .box .right-area .forgot .caixa input {
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+  width: 2rem;
+  height: 2rem;
+  color: #FFFFFF;
+  border-radius: 3px;
+  border: 1.5px solid rgba(160, 170, 178, 0.4);
+  -webkit-transform: translateY(-0.075em);
+  transform: translateY(-0.075em);
+  display: grid;
+  place-content: center;
+}
+.modal-login .container .box .right-area .forgot .caixa input::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: 120ms -webkit-transform ease-in-out;
+  transition: 120ms -webkit-transform ease-in-out;
+  transition: 120ms transform ease-in-out;
+  transition: 120ms transform ease-in-out, 120ms -webkit-transform ease-in-out;
+  -webkit-transform-origin: bottom left;
+  transform-origin: bottom left;
+  -webkit-clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+  background-color: CanvasText;
+}
+.modal-login .container .box .right-area .forgot .caixa input:checked {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+.modal-login .container .box .right-area .forgot .caixa input:checked::before {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+.modal-login .container .box .right-area .forgot .caixa input:focus {
+  outline: max(2px, 0.15em);
+  outline-offset: max(2px, 0.15em);
+}
+.modal-login .container .box .right-area .forgot span {
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 150%;
+  color: #757385;
+  margin-right: 21.9rem;
+}
+.modal-login .container .box .right-area .forgot button {
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 150%;
+  color: #1D63FF;
+  -webkit-transition: -webkit-text-decoration 0.3s;
+  transition: -webkit-text-decoration 0.3s;
+  transition: text-decoration 0.3s;
+  transition: text-decoration 0.3s, -webkit-text-decoration 0.3s;
+}
+.modal-login .container .box .right-area .forgot button:hover {
+  text-decoration: underline;
+}
+.modal-login .container .box .right-area .entrar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.modal-login .container .box .right-area .entrar .btn-entrar {
+  margin-bottom: 3.5rem;
+  width: 100%;
+  height: 5.6rem;
+  background-color: #1D63FF;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 150%;
+  color: #FFFFFF;
+  border: 1px solid #1D63FF;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.modal-login .container .box .right-area .entrar .btn-entrar:hover {
+  border: 1px solid #1D63FF;
+  background-color: #FFFFFF;
+  color: #1D63FF;
+}
+.modal-login .container .box .right-area .entrar span {
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 150%;
+  color: #A9ABB7;
+  margin-bottom: 3.4rem;
+}
+.modal-login .container .box .right-area .entrar .btn-google {
+  height: 5.8rem;
+  width: 100%;
+  background-color: rgba(109, 120, 159, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 150%;
+  color: #5C6277;
+  margin-bottom: 3.2rem;
+}
+.modal-login .container .box .right-area .entrar .btn-google img {
+  margin-right: 1.6rem;
+}
+.modal-login .container .box .right-area .inscrever p {
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 150%;
+  color: #4C4A5E;
+}
+.modal-login .container .box .right-area .inscrever p strong {
+  text-decoration: underline;
+  -webkit-text-decoration-color: #4C4A5E;
+  text-decoration-color: #4C4A5E;
+}
+
+.modal-senha {
+  height: 46rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  top: 17.4rem;
+  left: 73.9rem;
+  position: absolute;
+  z-index: 2023;
+  background-color: #FFFFFF;
+  width: 74.2rem;
+  opacity: 0;
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  pointer-events: none;
+}
+.modal-senha.senha-opened {
+  -webkit-transform: translateY(0%);
+  transform: translateY(0%);
+  opacity: 1;
+  pointer-events: all;
+}
+.modal-senha .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+}
+.modal-senha .container .imagens {
+  margin-right: 5.4rem;
+  width: 22.2rem;
+  height: 46rem;
+  background: url(../img/modal-senhas.png) no-repeat;
+  background-size: cover;
+}
+.modal-senha .container .texto {
+  width: 100%;
+  max-width: 43.4rem;
+  margin-top: 3.2rem;
+  margin-bottom: 1.6rem;
+}
+.modal-senha .container .texto .fechar-modal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+.modal-senha .container .texto .titulo {
+  width: 100%;
+  max-width: 37.4rem;
+  margin-bottom: 1.4rem;
+}
+.modal-senha .container .texto .titulo h2 {
+  font-weight: 600;
+  font-size: 3.2rem;
+  line-height: 125%;
+  color: #0D0B1A;
+  margin-bottom: 0.8rem;
+}
+.modal-senha .container .texto .titulo p {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 150%;
+  color: #757385;
+}
+.modal-senha .container .texto .input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.modal-senha .container .texto .input span {
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 150%;
+  color: #052D41;
+  margin-bottom: 0.3rem;
+}
+.modal-senha .container .texto .input input {
+  width: 41.6rem;
+  height: 5.6rem;
+  margin-bottom: 2.9rem;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 150%;
+  color: #757385;
+  -webkit-box-shadow: 0px 24px 32px rgba(205, 208, 231, 0.3);
+  box-shadow: 0px 24px 32px rgba(205, 208, 231, 0.3);
+}
+.modal-senha .container .texto .btn-recuperar-senha {
+  width: 41.6rem;
+  height: 5.6rem;
+  background-color: #1D63FF;
+  color: #FFFFFF;
+  font-size: 1.6rem;
+  line-height: 150%;
+  border: 1px solid #1D63FF;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.modal-senha .container .texto .btn-recuperar-senha:hover {
+  border: 1px solid #1D63FF;
+  background-color: #FFFFFF;
+  color: #1D63FF;
 }

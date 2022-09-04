@@ -18,12 +18,12 @@
 
 <body>
   <header>
-    <div class="upper">
+    <div class="upper" id="js-anuncio">
       <div class="texto">
         <span>Mês do digital, aproveite para <a href=""> fazer parte do SmartBusiness!</a></span>
       </div>
       <div class="close">
-        <a href="#">X</a>
+        <a href="#" id="js-btn-close-anuncio">X</a>
       </div>
     </div>
     <div class="container">
@@ -35,8 +35,8 @@
         </div>
         <div class="right-area">
           <div class="acessar">
-            <button>
-              <img src="/img/acessar.svg" alt="">
+            <button id="js-abrir-modal-login">
+              <img src="/img/acessar.svg" alt="" >
               <span>Acessar</span>
             </button>
           </div>
@@ -528,6 +528,122 @@
       </div>
     </div>
   </section>
+
+  <section class="s-newsletter">
+    <div class="container">
+      <div class="textos">
+        <span>Newsletter</span>
+        <h2>Fique por dentro das novidades</h2>
+        <p>Junte-se a mais de 20.000 clientes que já usam o SB para ficar por </br> dentro de tudo que pode fazer sua empresa crescer.</p>
+      </div>
+      <div class="input">
+        <img src="/img/icon-email.svg" alt="">
+        <input type="email" placeholder="Insira seu melhor e-mail">
+        <button class="cadastrar">Cadastrar</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="modal-login" id="js-modal-login">
+    <div class="container">
+      <div class="box">
+        <div class="left-area">
+          <div class="upper">
+            <img src="/img/modal-login-logo.svg" alt="">
+            <h2>O verdadeiro conceito </br> de <strong> Smart Company</strong></h2>
+          </div>
+          <div class="lower">
+            <img src="/img/modal-login-grafico.svg" alt="" class="grafico">            
+            <img src="/img/modal-login-mulher.png" alt="" class="mulher">
+            <div class="receita">
+              <img src="/img/receita.jpg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="right-area">
+          <div class="upper">
+            <div class="voltar" >
+              <button class="btn-voltar-modal-login" id="js-fechar-modal-login">
+                <img src="/img/seta-esquerda.svg" alt="" >
+                <span>Voltar</span>
+              </button>             
+            </div>
+            <div class="login">
+              <h3>Login</h3>
+            </div>
+          </div>
+          <div class="inputs">            
+            <span>E-mail</span>
+            <input type="email" placeholder="email@">                        
+            <span>Senha</span>
+            <input type="password" placeholder="Digite sua senha">           
+          </div>
+          <div class="forgot">
+            <label class="caixa"> 
+              <input type="checkbox">              
+            </label>
+            <span>Lembrar senha</span>
+            <button class="esqueceu" id="js-btn-lost-password">Esqueceu sua senha?</button>
+          </div>
+          <div class="entrar">
+            <button class="btn-entrar">Entrar</button>
+            <span>Ou</span>
+            <button class="btn-google">
+              <img src="/img/icon-logo-google.svg" alt="">
+              Entrar com o Google</button>          
+          </div>
+          <div class="inscrever">
+            <p>Não tem uma conta? <strong> Inscrever-se</strong></p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section> 
+
+  <section class="modal-senha" id="js-modal-lost-password">
+    <div class="container">
+      <div class="imagens">
+        
+      </div>
+      <div class="texto">
+        <div class="fechar-modal">
+          <button class="btn-close-modal" id="js-btn-fechar-modal-senhas">
+            <img src="/img/close-modal.svg" alt="">
+          </button>
+        </div>
+        <div class="titulo">
+          <h2>Esqueceu a senha?</h2>
+          <p>Digite seu e-mail e enviaremos instruções para redefinir sua senha</p>
+        </div>
+        <div class="input">
+          <span>E-mail</span>
+          <input type="email" placeholder="jhon@example.com">          
+        </div>
+        <button class="btn-recuperar-senha">Recuperar senha</button>
+      </div>
+    </div>
+  </section>
+  
+  <footer>
+    <div class="container">
+      <div class="logo">
+        <img src="/img/logo.svg" alt="">
+      </div>
+      <div class="direitos">
+        <p>© 2022 SmartBusiness. Todos os direitos reservados</p>
+      </div>
+      <div class="icons">
+        <img src="/img/icon-twitter.png" alt="" class="icon">
+        <img src="/img/icon-linkedin.svg" alt="" class="icon">
+        <img src="/img/icon-instagram.png" alt="" class="icon">
+        <img src="/img/icon-facebook.png" alt="" class="icon">
+      </div>
+      <div class="insany">
+        <p>Desenvolvido por <strong>Insany Design</strong></p>
+      </div>
+    </div>
+  </footer>
 
 
   <script src="js/plugins.js"></script>

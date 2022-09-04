@@ -6,8 +6,11 @@ header {
     height: 3.2rem;
     display: flex;  
     align-items: center;  
-    text-align: center;
-    margin-bottom: 4rem;
+    text-align: center;    
+    &.anuncio-closed {
+      display: none;
+      pointer-events: none;
+    }
     .texto {
       margin: 0 auto;
       span {    
@@ -43,6 +46,7 @@ header {
     
   }
   .down {
+    margin-top: 4rem;
     display: flex;
     justify-content: space-between;
     .logo {

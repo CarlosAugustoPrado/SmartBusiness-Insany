@@ -1,0 +1,39 @@
+footer {
+  height: 14.6rem;
+  padding-top: 5.4rem;
+  .container {
+    display: flex;
+    .direitos {
+      display: flex;
+      align-items: center;
+      margin-left: 8.1rem;
+      font-weight: 400;
+      font-size: 1.4rem;
+      line-height: 150%;
+      color: $neutral-dark-300;
+    }
+    .icons {
+      display: flex;
+      margin-left: 14.2rem;
+      align-items: center;      
+      .icon {        
+        &:not(:last-child) {
+          margin-right: 1.6rem;
+        }
+      }
+    }
+    .insany {
+      display: flex;
+      align-items: center;
+      margin-left: 11.2rem;
+      font-weight: 400;
+      font-size: 1.4rem;
+      line-height: 150%;
+      color: $neutral-dark-400
+      strong {
+        font-weight: 400;
+        text-decoration: underline;
+      }
+    }
+  }
+}
