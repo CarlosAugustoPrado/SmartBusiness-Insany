@@ -36,7 +36,7 @@
         <div class="right-area">
           <div class="acessar">
             <button id="js-abrir-modal-login">
-              <img src="/img/acessar.svg" alt="" >
+              <img src="/img/acessar.svg" alt="">
               <span>Acessar</span>
             </button>
           </div>
@@ -110,15 +110,15 @@
       <div class="right-area">
         <div class="numeros">
           <div class="projetos">
-            <h3>120</h3>
+            <h3 id="js-projetos"></h3>
             <p>Projeto realizado 2021</p>
           </div>
           <div class="escritorios">
-            <h3>12</h3>
+            <h3 id="js-escritorios"></h3>
             <p>Escritórios no Brasil</p>
           </div>
           <div class="faturamento">
-            <h3>325m</h3>
+            <h3 js="faturamento" id="js-faturamento"></h3>
             <p>Faturamento 2021</p>
           </div>
         </div>
@@ -483,50 +483,34 @@
           </div>
         </div>
         <div class="right-area">
-          <button class="accordion">
-            <span class="numero">01</span>
-            <p>Quais recursos ainda posso acessar nas novas Páginas?</p>            
-          </button>
-          <div class="panel">
-            <p>Turpis at malesuada orci ultricies ipsum amet sed cras. Enim ut urna feugiat ultrices semper quisque at.
-              Viverra lectus ut a gravida aliquet cras est lectus ullamcorper. Elementum diam iaculis neque arcu,
-              aliquet consectetur.</p>
-          </div>          
-          <button class="accordion">
-            <span class="numero">02</span>
-            <p>Como faço para abrir a minha nova Página?</p>            
-          </button>
-          <button class="accordion">
-            <span class="numero">03</span>
-            <p>Há algum conteúdo que não migrará com a minha Página?</p>            
-          <button class="accordion">
-            <span class="numero">04</span>
-            <p>Como as pessoas encontrarão a minha nova Página?</p>            
-          </button>
-          <button class="accordion">
-            <span class="numero">05</span>
-            <p>O que é o Feed? Como faço para configurá-lo?</p>            
-          </button>
+          <div class="wrapper" id="js-accordion-wrapper">
+            
+                      
+            
+          </div>
         </div>
       </div>
+      
+
       <div class="lower">
-        <div class="card">
-          <img src="/img/icon-duvidas.svg" alt="">
-          <span>Dúvidas?</span>
-          <p>Envie uma mensagem para nosso time</p>
-        </div>
-        <div class="card">
-          <img src="/img/icon-facaparte.svg" alt="">
-          <span>Faça parte</span>
-          <p>Cadastre-se para transformar sua empresa</p>
-        </div>
-        <div class="card">
-          <img src="/img/icon-zap.svg" alt="">
-          <span>Chama no zap</span>
-          <p>Fale com o nosso comercial</p>
-        </div>
+      <div class="card">
+        <img src="/img/icon-duvidas.svg" alt="">
+        <span>Dúvidas?</span>
+        <p>Envie uma mensagem para nosso time</p>
+      </div>
+      <div class="card">
+        <img src="/img/icon-facaparte.svg" alt="">
+        <span>Faça parte</span>
+        <p>Cadastre-se para transformar sua empresa</p>
+      </div>
+      <div class="card">
+        <img src="/img/icon-zap.svg" alt="">
+        <span>Chama no zap</span>
+        <p>Fale com o nosso comercial</p>
+      </div>
       </div>
     </div>
+    
   </section>
 
   <section class="s-newsletter">
@@ -534,7 +518,8 @@
       <div class="textos">
         <span>Newsletter</span>
         <h2>Fique por dentro das novidades</h2>
-        <p>Junte-se a mais de 20.000 clientes que já usam o SB para ficar por </br> dentro de tudo que pode fazer sua empresa crescer.</p>
+        <p>Junte-se a mais de 20.000 clientes que já usam o SB para ficar por </br> dentro de tudo que pode fazer sua
+          empresa crescer.</p>
       </div>
       <div class="input">
         <img src="/img/icon-email.svg" alt="">
@@ -553,7 +538,7 @@
             <h2>O verdadeiro conceito </br> de <strong> Smart Company</strong></h2>
           </div>
           <div class="lower">
-            <img src="/img/modal-login-grafico.svg" alt="" class="grafico">            
+            <img src="/img/modal-login-grafico.svg" alt="" class="grafico">
             <img src="/img/modal-login-mulher.png" alt="" class="mulher">
             <div class="receita">
               <img src="/img/receita.jpg" alt="">
@@ -562,25 +547,25 @@
         </div>
         <div class="right-area">
           <div class="upper">
-            <div class="voltar" >
+            <div class="voltar">
               <button class="btn-voltar-modal-login" id="js-fechar-modal-login">
-                <img src="/img/seta-esquerda.svg" alt="" >
+                <img src="/img/seta-esquerda.svg" alt="">
                 <span>Voltar</span>
-              </button>             
+              </button>
             </div>
             <div class="login">
               <h3>Login</h3>
             </div>
           </div>
-          <div class="inputs">            
+          <div class="inputs">
             <span>E-mail</span>
-            <input type="email" placeholder="email@">                        
+            <input type="email" placeholder="email@">
             <span>Senha</span>
-            <input type="password" placeholder="Digite sua senha">           
+            <input type="password" placeholder="Digite sua senha">
           </div>
           <div class="forgot">
-            <label class="caixa"> 
-              <input type="checkbox">              
+            <label class="caixa">
+              <input type="checkbox">
             </label>
             <span>Lembrar senha</span>
             <button class="esqueceu" id="js-btn-lost-password">Esqueceu sua senha?</button>
@@ -590,7 +575,7 @@
             <span>Ou</span>
             <button class="btn-google">
               <img src="/img/icon-logo-google.svg" alt="">
-              Entrar com o Google</button>          
+              Entrar com o Google</button>
           </div>
           <div class="inscrever">
             <p>Não tem uma conta? <strong> Inscrever-se</strong></p>
@@ -599,12 +584,12 @@
         </div>
       </div>
     </div>
-  </section> 
+  </section>
 
   <section class="modal-senha" id="js-modal-lost-password">
     <div class="container">
       <div class="imagens">
-        
+
       </div>
       <div class="texto">
         <div class="fechar-modal">
@@ -618,13 +603,13 @@
         </div>
         <div class="input">
           <span>E-mail</span>
-          <input type="email" placeholder="jhon@example.com">          
+          <input type="email" placeholder="jhon@example.com">
         </div>
         <button class="btn-recuperar-senha">Recuperar senha</button>
       </div>
     </div>
   </section>
-  
+
   <footer>
     <div class="container">
       <div class="logo">

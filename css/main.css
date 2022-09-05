@@ -934,6 +934,9 @@ footer .container .insany {
   border: 1px solid #1D63FF;
 }
 
+.s-faq {
+  height: 600rem;
+}
 .s-faq .container .upper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1005,71 +1008,58 @@ footer .container .insany {
   -webkit-text-decoration: underline #140C40;
   text-decoration: underline #140C40;
 }
-.s-faq .container .upper .right-area {
-  max-width: 69.6rem;
+.s-faq .container .upper .right-area .wrapper {
+  width: 100%;
+  max-width: 68.6rem;
 }
-.s-faq .container .upper .right-area .accordion {
+.s-faq .container .upper .right-area .wrapper .accordion {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  border-bottom: 1.5px solid #CBD6E2;
+  width: 100%;
+  max-width: 68.6rem;
+}
+.s-faq .container .upper .right-area .wrapper .accordion:not(:first-child) {
+  border-top: 1.5px solid #CBD6E2;
+  padding-top: 3.6rem;
+}
+.s-faq .container .upper .right-area .wrapper .accordion:not(:last-child) {
   padding-bottom: 3.6rem;
-  width: 69.6rem;
 }
-.s-faq .container .upper .right-area .accordion:not(:last-child) {
-  margin-bottom: 3.6rem;
-}
-.s-faq .container .upper .right-area .accordion::after {
+.s-faq .container .upper .right-area .wrapper .accordion::after {
   content: "+";
-  font-size: 2.4rem;
-  color: #4C4A5E;
-  float: right;
+  font-size: 2.5rem;
   margin-left: 5px;
+  color: #4C4A5E;
 }
-.s-faq .container .upper .right-area .accordion .numero {
+.s-faq .container .upper .right-area .wrapper .accordion span {
   font-weight: 400;
   font-size: 2.4rem;
   line-height: 125%;
   color: #1D63FF;
   margin-right: 2.4rem;
 }
-.s-faq .container .upper .right-area .accordion p {
+.s-faq .container .upper .right-area .wrapper .accordion p {
   font-weight: 400;
   font-size: 2rem;
   line-height: 150%;
   color: #413E52;
 }
-.s-faq .container .upper .right-area .accordion .expandir {
-  width: 1.6rem;
-  height: 1.6rem;
-}
-.s-faq .container .upper .right-area .accordion.active {
-  border-bottom: 0px;
-  padding-bottom: 0;
-  margin-bottom: 0;
-}
-.s-faq .container .upper .right-area .panel {
-  display: none;
-  margin-left: 5rem;
-  max-height: 0;
-  overflow: hidden;
-  -webkit-transition: max-height 0.2s ease-out;
-  transition: max-height 0.2s ease-out;
-}
-.s-faq .container .upper .right-area .panel p {
+.s-faq .container .upper .right-area .wrapper .panel {
+  margin-left: 5.2rem;
   font-weight: 400;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   line-height: 150%;
   color: #2A2739;
-}
-.s-faq .container .upper .right-area .panel.active {
-  padding-bottom: 3.6rem;
-  margin-bottom: 3.6rem;
-  margin-top: 1.4rem;
-  max-width: 58rem;
+  margin-bottom: 6.6rem;
+  overflow: hidden;
+  display: none;
+  max-height: 0;
+  -webkit-transition: max-height 0.2s ease-out;
+  transition: max-height 0.2s ease-out;
 }
 .s-faq .container .lower {
   width: 100%;
