@@ -82,6 +82,7 @@ header .upper .close a {
 }
 header .upper .close a:hover {
   color: #FFFFFF;
+  text-decoration: underline;
 }
 header .down {
   margin-top: 4rem;
@@ -934,9 +935,6 @@ footer .container .insany {
   border: 1px solid #1D63FF;
 }
 
-.s-faq {
-  height: 600rem;
-}
 .s-faq .container .upper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1008,58 +1006,48 @@ footer .container .insany {
   -webkit-text-decoration: underline #140C40;
   text-decoration: underline #140C40;
 }
-.s-faq .container .upper .right-area .wrapper {
-  width: 100%;
+.s-faq .container .upper .area-perguntas .pergunta {
   max-width: 68.6rem;
+  width: 100%;
+  margin-bottom: 4rem;
+  border-bottom: 1.5px solid #CBD6E2;
 }
-.s-faq .container .upper .right-area .wrapper .accordion {
+.s-faq .container .upper .area-perguntas .pergunta.active .title {
+  margin-bottom: 1.4rem;
+}
+.s-faq .container .upper .area-perguntas .pergunta.active p {
+  display: block;
+}
+.s-faq .container .upper .area-perguntas .pergunta .title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 100%;
-  max-width: 68.6rem;
+  margin-bottom: 4.5rem;
 }
-.s-faq .container .upper .right-area .wrapper .accordion:not(:first-child) {
-  border-top: 1.5px solid #CBD6E2;
-  padding-top: 3.6rem;
-}
-.s-faq .container .upper .right-area .wrapper .accordion:not(:last-child) {
-  padding-bottom: 3.6rem;
-}
-.s-faq .container .upper .right-area .wrapper .accordion::after {
-  content: "+";
-  font-size: 2.5rem;
-  margin-left: 5px;
-  color: #4C4A5E;
-}
-.s-faq .container .upper .right-area .wrapper .accordion span {
+.s-faq .container .upper .area-perguntas .pergunta .title span {
   font-weight: 400;
   font-size: 2.4rem;
   line-height: 125%;
   color: #1D63FF;
   margin-right: 2.4rem;
 }
-.s-faq .container .upper .right-area .wrapper .accordion p {
+.s-faq .container .upper .area-perguntas .pergunta .title h4 {
   font-weight: 400;
   font-size: 2rem;
   line-height: 150%;
   color: #413E52;
 }
-.s-faq .container .upper .right-area .wrapper .panel {
-  margin-left: 5.2rem;
+.s-faq .container .upper .area-perguntas .pergunta p {
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 150%;
   color: #2A2739;
+  margin-left: 3.7rem;
   margin-bottom: 6.6rem;
-  overflow: hidden;
   display: none;
-  max-height: 0;
-  -webkit-transition: max-height 0.2s ease-out;
-  transition: max-height 0.2s ease-out;
 }
 .s-faq .container .lower {
   width: 100%;
@@ -1174,6 +1162,7 @@ footer .container .insany {
   line-height: 150%;
   color: #413E52;
   margin-right: 10.5rem;
+  background-color: #F2F5FC;
 }
 .s-newsletter .container .input input::-webkit-input-placeholder {
   font-weight: 400;

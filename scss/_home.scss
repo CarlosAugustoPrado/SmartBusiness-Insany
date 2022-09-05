@@ -667,10 +667,8 @@
   }
 }
 
-.s-faq {
-  height: 600rem;  
-  .container {
-        
+.s-faq {    
+  .container {        
     .upper {
       display: flex;
       .left-area {
@@ -732,60 +730,51 @@
           }
         }
       }
-      .right-area {        
-        .wrapper {
+      .area-perguntas {
+        .pergunta {
+          max-width: 68.6rem;
           width: 100%;
-          max-width: 68.6rem;          
-          .accordion {
+          margin-bottom: 4rem;
+          border-bottom: 1.5px solid #CBD6E2;
+          &.active {
+            .title {
+              margin-bottom: 1.4rem;
+            }
+            p {
+              display: block;
+            }
+          }
+          .title {
             display: flex;
-            align-items: center;                
-            width: 100%;
-            max-width: 68.6rem;
-                                 
-            &:not(:first-child) {
-              border-top: 1.5px solid #CBD6E2;
-              padding-top: 3.6rem;              
-            }
-            &:not(:last-child) {
-              padding-bottom: 3.6rem;
-            }
-            &::after {
-              content: '\002B'; 
-              font-size: 2.5rem;
-              margin-left: 5px;
-              color: $neutral-dark-100                             
-            }           
+            align-items: center;
+            margin-bottom: 4.5rem;           
+            
             span {
               font-weight: 400;
               font-size: 2.4rem;
               line-height: 125%;
               color: $primary-default;
-              margin-right: 2.4rem;              
+              margin-right: 2.4rem;                            
             }
-            p {
+            h4 {
               font-weight: 400;
               font-size: 2rem;
               line-height: 150%;
-              color: $neutral-dark-200;
-                           
+              color: $neutral-dark-200;              
             }
+            
           }
-          .panel {
-            margin-left: 5.2rem;
+          p {
             font-weight: 400;
             font-size: 1.6rem;
             line-height: 150%;
             color: $neutral-dark-400;
+            margin-left: 3.7rem;
             margin-bottom: 6.6rem;
-            overflow: hidden;
-            display: none;
-            max-height: 0;
-            transition: max-height 0.2s ease-out;
-                      
+            display: none;            
           }
         }
       }
-      
     }
     .lower {
       width: 100%;
@@ -876,6 +865,7 @@
         line-height: 150%;
         color: $neutral-dark-200;
         margin-right: 10.5rem;
+        background-color: #F2F5FC;
         &::placeholder {
           font-weight: 400;
           font-size: 1.6rem;

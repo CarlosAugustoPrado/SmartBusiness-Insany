@@ -6,7 +6,7 @@ var slideBlog = new Swiper(".slide-blog", {
   },
 });
 
-
+perguntas()
 
 /* SCRIPT FECHAR ANUNCIO */
 const anuncio = document.getElementById('js-anuncio');
@@ -73,68 +73,35 @@ let counts3=setInterval(updated3);
             }            
         }
 
-
-
-perguntas ();
 /* SCRIPT DA API DO ACCORDION */
 
-const areaPerguntas = document.getElementById('js-accordion-wrapper');
+const areaPerguntas = document.getElementById('js-area-perguntas');
 
 function criarPerguntas (id, pergunta, resposta) {
-  let accordionButton = document.createElement('button');
-  accordionButton.classList = 'accordion';
-  areaPerguntas.appendChild(accordionButton);
+  let perguntas = document.createElement('div');
+  perguntas.classList = 'pergunta js-pergunta active';
+  perguntas.id = 'js-pergunta';
+  areaPerguntas.appendChild(perguntas);
 
-  let numeroPergunta = document.createElement('span');
-  numeroPergunta.innerText = `${id}`;
-  accordionButton.appendChild(numeroPergunta);
+  let buttonPergunta = document.createElement('button');
+  buttonPergunta.classList = 'title';
+  perguntas.appendChild(buttonPergunta);
 
-  let perguntaApi = document.createElement('p');
-  perguntaApi.innerText = `${pergunta}`;
-  accordionButton.appendChild(perguntaApi);
+  let idPergunta = document.createElement('span');
+  idPergunta.innerHTML = `${id}`;
+  buttonPergunta.appendChild(idPergunta);
 
-  let areaRespostas = document.createElement('div');
-  areaRespostas.classList = 'panel';
-  areaPerguntas.appendChild(areaRespostas);
+  let perguntaApi = document.createElement('h4');
+  perguntaApi.innerHTML = `${pergunta}`;
+  buttonPergunta.appendChild(perguntaApi);
 
-  let respostaApi = document.createElement('p');  
-  respostaApi.innerText = `${resposta}`;
-  areaRespostas.appendChild(respostaApi);
+  let respostaApi = document.createElement('p');
+  respostaApi.innerHTML = `${resposta}`;
+  perguntas.appendChild(respostaApi);
+
   
-  /* SCRIPT PARA O ACCORDION */
-var accordion = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < accordion.length; i++) {
-  accordion[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";      
-    }
-  });
-}
-
-var accordion = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < accordion.length; i++) {
-  accordion[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight) {
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    }
-  });
-}
-}
-
-
-
+}  
+    
 function perguntas () {
   axios ({
     method: 'GET',
@@ -156,10 +123,16 @@ function perguntas () {
 
       criarPerguntas (perguntas.id, perguntas.pergunta, perguntas.resposta);
 
-            
+      /* SCRIPT PARA O ACCORDION */
+      
+      const botaoPergunta = document.querySelectorAll('js-pergunta');
+      console.log(botaoPergunta);            
     })
   })
 }
+
+
+
 
 
 

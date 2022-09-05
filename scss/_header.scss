@@ -27,9 +27,7 @@ header {
           
         }
       }
-    }
-    
-    
+    }    
     .close {
       margin-right: 35rem;
       margin-left: -25rem;    
@@ -39,6 +37,7 @@ header {
         transition: color .3s;
         &:hover {
           color: #FFFFFF;
+          text-decoration: underline;
         }
       }
     }
