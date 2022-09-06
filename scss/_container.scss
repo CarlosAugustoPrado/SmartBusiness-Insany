@@ -2,5 +2,10 @@
   width: 100%;
   max-width: 121.6rem;
   margin: 0 auto;
-  padding: 0rem 1.5rem; 
+  padding: 0rem 1.5rem;
+  @include responsive (800px) {
+    max-width: 80rem;
+  } 
+  
 }
+

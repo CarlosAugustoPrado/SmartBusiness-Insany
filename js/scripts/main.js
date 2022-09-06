@@ -1,9 +1,24 @@
 var slideBlog = new Swiper(".slide-blog", {
-  slidesPerView: 4,  
+  slidesPerView: 4,
+  spaceBetween: 32,  
   pagination: {
     el: ".swiper-pagination",
-    clickable: true,
+    clickable: true,    
   },
+  breakpoints: {
+    300: {
+      slidesPerView: 1.3,
+      spaceBetween: 24,
+    },
+    600: {
+      slidesPerView: 3,
+      spaceBetween: 16,
+    },
+    1200: {
+      slidesPerView: 4,
+      spaceBetween: 20
+    },
+  }
 });
 
 perguntas()
@@ -67,7 +82,7 @@ let counts3=setInterval(updated3);
         function updated3(){
             var count= document.getElementById("js-faturamento");
             count.innerHTML=++upto3;
-            if(upto3===525)
+            if(upto3===325)
             {
                 clearInterval(counts3);
             }            
@@ -79,8 +94,7 @@ const areaPerguntas = document.getElementById('js-area-perguntas');
 
 function criarPerguntas (id, pergunta, resposta) {
   let perguntas = document.createElement('div');
-  perguntas.classList = 'pergunta js-pergunta active';
-  perguntas.id = 'js-pergunta';
+  perguntas.classList = 'pergunta';  
   areaPerguntas.appendChild(perguntas);
 
   let buttonPergunta = document.createElement('button');
@@ -88,7 +102,7 @@ function criarPerguntas (id, pergunta, resposta) {
   perguntas.appendChild(buttonPergunta);
 
   let idPergunta = document.createElement('span');
-  idPergunta.innerHTML = `${id}`;
+  idPergunta.innerHTML = `0${id}`;
   buttonPergunta.appendChild(idPergunta);
 
   let perguntaApi = document.createElement('h4');
@@ -118,21 +132,53 @@ function perguntas () {
       const perguntas = {
         id: idPergunta,
         pergunta: question,
-        resposta: answer
+        resposta: answer,
       };
 
       criarPerguntas (perguntas.id, perguntas.pergunta, perguntas.resposta);
 
       /* SCRIPT PARA O ACCORDION */
       
-      const botaoPergunta = document.querySelectorAll('js-pergunta');
-      console.log(botaoPergunta);            
+      const botaoPergunta = document.getElementsByClassName('pergunta');
+      var i;
+      for (i=0; i<botaoPergunta.length; i++) {
+        botaoPergunta[i].addEventListener('click', function () {
+          this.classList.toggle('active')
+        })
+      }     
     })
   })
 }
 
+/* Scripts de alteração no HTML */
+const logo = document.getElementById('js-imagem-logo');
+const imagemVideo = document.getElementById('js-imagem-video')
 
+if (window.matchMedia("(max-width:400px)").matches) {
+  logo.setAttribute("src", "../img/logo-celular.svg");  
+} else {
+  logo.setAttribute("src", "../img/logo.svg")  
+}
 
+if (window.matchMedia("(max-width:400px)").matches) {
+  imagemVideo.setAttribute("src", "../img/video-mobile.png");  
+} else {
+  imagemVideo.setAttribute("src", "../img/video.png");  
+}
+
+var imagem = document.getElementById('js-forma-inferior');
+if (window.matchMedia("(max-width:400px)").matches) {
+  if (imagem.parentNode) {
+    imagem.parentNode.removeChild(imagem);
+  } 
+}
+
+/* SCRIPT PALAVRAS ALEATORIAS */
+var palavras = ['sucesso!', 'destaque!', 'impacto!']
+var palavra = palavras[Math.floor(Math.random()*palavras.length)];
+const palavraHtml = document.getElementById('js-palavra-aleatoria');
+
+palavraHtml.innerHTML = "<h1>O segredo para um negócio de <strong>" + palavra 
 
 
 

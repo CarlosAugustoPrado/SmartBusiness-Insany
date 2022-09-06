@@ -40,9 +40,7 @@ header {
           text-decoration: underline;
         }
       }
-    }
-    
-    
+    }    
   }
   .down {
     margin-top: 4rem;
@@ -98,5 +96,54 @@ header {
         }
       }
     }
+    
+    
   }
+
+  @include responsive (768px) {
+    .upper {
+      .close {
+        margin-right: 2rem;
+        margin-left: 0;
+      }
+    }
+  }
+  @include responsive (400px) {
+    .upper {
+      height: 7.4rem;
+      .close {
+        display: none;
+      }
+      .texto {
+        max-width: 25.6rem;
+      }
+    }
+    .down {
+      margin-top: 2.6rem;
+      margin-bottom: 2.6rem;
+      padding: 0 2.4rem 0 2.4rem;
+      .right-area {
+        .acessar {
+          max-width: 8.5rem;
+          button {
+            span {
+              margin-left: 0.7rem;
+            }
+          }
+        }
+        .cadastrar {
+          display: none;
+        }
+      }
+    }
+  }
+  @include responsive (1440px) {
+    .upper {
+      .close {
+        margin-right: 13rem;
+        margin-left: -8rem;
+      }
+    }
+  }
+    
 }
