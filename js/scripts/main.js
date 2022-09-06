@@ -109,6 +109,10 @@ function criarPerguntas (id, pergunta, resposta) {
   perguntaApi.innerHTML = `${pergunta}`;
   buttonPergunta.appendChild(perguntaApi);
 
+  let simbolo = document.createElement('div');
+  simbolo.classList = 'simbolo-expandir';
+  buttonPergunta.appendChild(simbolo);
+
   let respostaApi = document.createElement('p');
   respostaApi.innerHTML = `${resposta}`;
   perguntas.appendChild(respostaApi);
@@ -145,7 +149,8 @@ function perguntas () {
         botaoPergunta[i].addEventListener('click', function () {
           this.classList.toggle('active')
         })
-      }     
+      }
+           
     })
   })
 }

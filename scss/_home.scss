@@ -26,8 +26,7 @@
           line-height: 150%;        
         }
       }
-      .titulo {
-        
+      .titulo {        
         .titulo-principal {
           h1 {
             margin-top: 1.6rem;
@@ -42,8 +41,7 @@
           strong {
             text-decoration: underline $primary-default;
           } 
-        }
-                         
+        }                 
         
         h3 {
           color: $neutral-dark-400;
@@ -140,9 +138,12 @@
       .text-area {
         margin-top: 4.4rem;
         .titulo {
-          h1 {
-            font-size: 3.8rem;
+          .titulo-principal {
+            h1 {
+              font-size: 3.8rem;
+            }
           }
+          
           h3 {
             font-size: 1.6rem;
           }
@@ -198,15 +199,17 @@
           display: flex;
           justify-content: center;
         }
-        .titulo{
-          
+        .titulo{          
           display: flex;
           flex-direction: column;          
           text-align: center;
-          h1 {
-            font-size: 3.2rem;
-            margin-bottom: 1.6rem;
+          .titulo-principal {
+            h1 {
+              font-size: 3.2rem;
+              margin-bottom: 1.6rem;
+            }
           }
+          
           h3 {
             max-width: 29.5rem;
             text-align: center;
@@ -1298,42 +1301,65 @@
           width: 100%;
           margin-bottom: 4rem;
           border-bottom: 1.5px solid #CBD6E2;
+                            
           &.active {
+            transition: all 0.5s ease-out; 
             .title {
               margin-bottom: 1.4rem;
+              .simbolo-expandir {
+                &:after {
+                  content: '\002D';                  
+                  color: $neutral-dark-200;
+                  font-size: 2.2rem;
+                  right: 38rem;                                                  
+                }
+              }   
             }
             p {
               display: block;
+              max-height: 10rem;
+              overflow: auto;
             }
           }
           .title {
-            display: flex;
-            align-items: center;
-            margin-bottom: 4.5rem;           
-            
+            display: flex;            
+            margin-bottom: 4.5rem;
+            width: 100%;
+            max-width: 70rem;            
+            .simbolo-expandir {
+              &:after {
+                content: '\002B';                
+                color: $neutral-dark-200;
+                font-size: 2.2rem;
+                right: 38rem;
+                position: absolute;
+                                 
+              }
+            }           
             span {
               font-weight: 400;
               font-size: 2.4rem;
               line-height: 125%;
               color: $primary-default;
-              margin-right: 2.4rem;                            
+              margin-right: 2.4rem;                                         
             }
             h4 {
               font-weight: 400;
               font-size: 2rem;
               line-height: 150%;
-              color: $neutral-dark-200;              
-            }
-            
+              color: $neutral-dark-200;                          
+            }            
           }
           p {
             font-weight: 400;
             font-size: 1.6rem;
             line-height: 150%;
             color: $neutral-dark-400;
-            margin-left: 3.7rem;
+            margin-left: 5rem;
             margin-bottom: 6.6rem;
-            display: none;            
+            display: none;
+            max-height: 0;
+            overflow: hidden;                       
           }
         }
       }
@@ -1376,6 +1402,32 @@
       }
     }
   }
+  @include responsive (1440px) {
+    .container {
+      .upper {
+        .area-perguntas {
+          .pergunta {
+            &.active {
+              .title {
+                .simbolo-expandir {
+                  &:after {
+                    right: 20rem;
+                  } 
+                }
+              }
+            }
+            .title {
+              .simbolo-expandir {
+                &:after {
+                  right: 20rem;
+                } 
+              }
+            }
+          }
+        }
+      }
+    }
+  }
   @include responsive (800px) {
     .container {
       .upper {
@@ -1392,9 +1444,26 @@
         }
         .area-perguntas {
           .pergunta {
+            &.active {
+              p {
+                max-height: 15rem;
+              }
+              .title {
+                .simbolo-expandir {
+                  &:after {
+                    right: 2rem;
+                  }
+                }
+              }
+            }
             .title {
               align-items: flex-start;
               text-align: start;
+              .simbolo-expandir {
+                &:after {
+                  right: 2rem;
+                }
+              }
               h4 {
                 font-size: 1.8rem;
               }
@@ -1440,7 +1509,7 @@
         .area-perguntas {
           .pergunta {
             .title {
-              align-items: center;
+              
               h4 {
                 font-size: 1.6rem;
               }

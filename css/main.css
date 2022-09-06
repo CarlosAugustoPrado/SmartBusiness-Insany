@@ -468,7 +468,7 @@ footer .container .insany {
   .s-hero .container .text-area {
     margin-top: 4.4rem;
   }
-  .s-hero .container .text-area .titulo h1 {
+  .s-hero .container .text-area .titulo .titulo-principal h1 {
     font-size: 3.8rem;
   }
   .s-hero .container .text-area .titulo h3 {
@@ -542,7 +542,7 @@ footer .container .insany {
     flex-direction: column;
     text-align: center;
   }
-  .s-hero .container .text-area .titulo h1 {
+  .s-hero .container .text-area .titulo .titulo-principal h1 {
     font-size: 3.2rem;
     margin-bottom: 1.6rem;
   }
@@ -1720,20 +1720,38 @@ footer .container .insany {
   margin-bottom: 4rem;
   border-bottom: 1.5px solid #CBD6E2;
 }
+.s-faq .container .upper .area-perguntas .pergunta.active {
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
 .s-faq .container .upper .area-perguntas .pergunta.active .title {
   margin-bottom: 1.4rem;
 }
+.s-faq .container .upper .area-perguntas .pergunta.active .title .simbolo-expandir:after {
+  content: "-";
+  color: #413E52;
+  font-size: 2.2rem;
+  right: 38rem;
+}
 .s-faq .container .upper .area-perguntas .pergunta.active p {
   display: block;
+  max-height: 10rem;
+  overflow: auto;
 }
 .s-faq .container .upper .area-perguntas .pergunta .title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   margin-bottom: 4.5rem;
+  width: 100%;
+  max-width: 70rem;
+}
+.s-faq .container .upper .area-perguntas .pergunta .title .simbolo-expandir:after {
+  content: "+";
+  color: #413E52;
+  font-size: 2.2rem;
+  right: 38rem;
+  position: absolute;
 }
 .s-faq .container .upper .area-perguntas .pergunta .title span {
   font-weight: 400;
@@ -1753,9 +1771,11 @@ footer .container .insany {
   font-size: 1.6rem;
   line-height: 150%;
   color: #2A2739;
-  margin-left: 3.7rem;
+  margin-left: 5rem;
   margin-bottom: 6.6rem;
   display: none;
+  max-height: 0;
+  overflow: hidden;
 }
 .s-faq .container .lower {
   width: 100%;
@@ -1805,6 +1825,14 @@ footer .container .insany {
   line-height: 150%;
   color: #353345;
 }
+@media (max-width: 1440px) {
+  .s-faq .container .upper .area-perguntas .pergunta.active .title .simbolo-expandir:after {
+    right: 20rem;
+  }
+  .s-faq .container .upper .area-perguntas .pergunta .title .simbolo-expandir:after {
+    right: 20rem;
+  }
+}
 @media (max-width: 800px) {
   .s-faq .container .upper {
     margin: 0 2rem;
@@ -1819,11 +1847,20 @@ footer .container .insany {
   .s-faq .container .upper .left-area p {
     font-size: 1.7rem;
   }
+  .s-faq .container .upper .area-perguntas .pergunta.active p {
+    max-height: 15rem;
+  }
+  .s-faq .container .upper .area-perguntas .pergunta.active .title .simbolo-expandir:after {
+    right: 2rem;
+  }
   .s-faq .container .upper .area-perguntas .pergunta .title {
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
     text-align: start;
+  }
+  .s-faq .container .upper .area-perguntas .pergunta .title .simbolo-expandir:after {
+    right: 2rem;
   }
   .s-faq .container .upper .area-perguntas .pergunta .title h4 {
     font-size: 1.8rem;
@@ -1867,11 +1904,6 @@ footer .container .insany {
     -ms-flex-pack: center;
     justify-content: center;
     margin-bottom: 1.8rem;
-  }
-  .s-faq .container .upper .area-perguntas .pergunta .title {
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
   }
   .s-faq .container .upper .area-perguntas .pergunta .title h4 {
     font-size: 1.6rem;
