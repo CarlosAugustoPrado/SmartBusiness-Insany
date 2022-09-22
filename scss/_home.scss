@@ -444,7 +444,7 @@
     height: 80.1rem;
     .forma-inferior3, .forma-inferior2 {
       bottom:  0rem;
-      right: -4.2rem;
+      right: 0;
     }
     
     .forma-inferior {      
@@ -2102,6 +2102,8 @@
   }
   @include responsive (480px) {
     left: 0;
+    width: 100%;
+    max-width: none;
     .container {
       background-color: #F2F5FC;
       .imagens {

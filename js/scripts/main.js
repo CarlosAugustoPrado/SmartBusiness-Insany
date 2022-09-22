@@ -5,6 +5,7 @@ var slideBlog = new Swiper(".slide-blog", {
     el: ".swiper-pagination",
     clickable: true,    
   },
+  
   breakpoints: {
     300: {
       slidesPerView: 1.3,

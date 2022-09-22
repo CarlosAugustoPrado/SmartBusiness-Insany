@@ -32,13 +32,18 @@ ul {
 
 .container {
   width: 100%;
-  max-width: 121.6rem;
+  max-width: 124.6rem;
   margin: 0 auto;
   padding: 0rem 1.5rem;
 }
 @media (max-width: 800px) {
   .container {
     max-width: 80rem;
+  }
+}
+@media (max-width: 560px) {
+  .container {
+    max-width: none;
   }
 }
 
@@ -772,7 +777,7 @@ footer .container .insany {
   }
   .s-dados .forma-inferior3, .s-dados .forma-inferior2 {
     bottom: 0rem;
-    right: -4.2rem;
+    right: 0;
   }
   .s-dados .forma-inferior {
     bottom: -6.6rem;
@@ -2616,6 +2621,8 @@ footer .container .insany {
 @media (max-width: 480px) {
   .modal-senha {
     left: 0;
+    width: 100%;
+    max-width: none;
   }
   .modal-senha .container {
     background-color: #F2F5FC;
