@@ -22,7 +22,7 @@ var slideBlog = new Swiper(".slide-blog", {
   }
 });
 
-perguntas()
+
 
 /* SCRIPT FECHAR ANUNCIO */
 const anuncio = document.getElementById('js-anuncio');
@@ -140,19 +140,17 @@ function perguntas () {
         resposta: answer,
       };
 
-      criarPerguntas (perguntas.id, perguntas.pergunta, perguntas.resposta);
-
-      /* SCRIPT PARA O ACCORDION */
-      
-      const botaoPergunta = document.getElementsByClassName('pergunta');
+      criarPerguntas (perguntas.id, perguntas.pergunta, perguntas.resposta);      
+           
+    })
+    // SCRIPT PARA O ACCORDION 
+    const botaoPergunta = document.getElementsByClassName('pergunta');
       var i;
       for (i=0; i<botaoPergunta.length; i++) {
         botaoPergunta[i].addEventListener('click', function () {
           this.classList.toggle('active')
         })
-      }
-           
-    })
+      } 
   })
 }
 
@@ -187,8 +185,7 @@ const palavraHtml = document.getElementById('js-palavra-aleatoria');
 palavraHtml.innerHTML = "<h1>O segredo para um negócio de <strong>" + palavra 
 
 
-
-
+perguntas()
 
 
 
