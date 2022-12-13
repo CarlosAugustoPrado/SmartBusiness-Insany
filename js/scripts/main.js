@@ -48,13 +48,23 @@ fecharModalLogin.addEventListener('click', () => {
 const modalSenhas = document.getElementById('js-modal-lost-password');
 const btnAbrirModalSenhas = document.getElementById('js-btn-lost-password');
 const btnFecharModalSenhas = document.getElementById('js-btn-fechar-modal-senhas');
+const overlay = document.getElementById("overlay");
 
 btnAbrirModalSenhas.addEventListener('click', () => {
   modalSenhas.classList.add('senha-opened');
+  overlayOn();
 })
 btnFecharModalSenhas.addEventListener('click', () => {
   modalSenhas.classList.remove('senha-opened');
+  overlayOff();
 })
+
+function overlayOff() {
+  overlay.style.display = "none"
+}
+function overlayOn() {
+  overlay.style.display = "block"
+}
 
 /* SCRIPT PARA ANIMAÇÃO DE NUMEROS */
 let counts=setInterval(updated);
